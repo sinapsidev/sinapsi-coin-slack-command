@@ -20,11 +20,11 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:*:${ssm:${self:custom.iam_role.resource_id}}:table/clara-coins-*"
+      Resource: "arn:aws:dynamodb:*:${ssm:${self:custom.iam_role.resource_id}}:table/sinapsi-coins-*"
 
 custom:
   s3:
-    table_name: "clara-coins-${opt:stage, 'dev'}-FY24-00"
+    table_name: "sinapsi-coins-${opt:stage, 'dev'}-FY24-00"
   parameter_store:
     base_name: "/${self:service}/${opt:stage, 'dev'}"
   env:

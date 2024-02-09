@@ -79,15 +79,15 @@ export const handle = async (sender, text, responseUrl) => {
   const validationResult = coinExchange.validateSend()
 
   if (validationResult === coinExchange.VALIDATION_STATUS.NOT_ENOUGH_COINS) {
-    return slackTextResponsePrivate(`Unfortunately, you don't have enough Clara Coins (${config.TOTAL_COINS - alreadySentCoins}) to thank ${receivers.join(', ')}`)
+    return slackTextResponsePrivate(`Unfortunately, you don't have enough Sinapsi Coins (${config.TOTAL_COINS - alreadySentCoins}) to thank ${receivers.join(', ')}`)
   }
 
   if (validationResult === coinExchange.VALIDATION_STATUS.INVALID_AMOUNT) {
-    return slackTextResponsePrivate(`You cannot send ${value} Clara Coins.`)
+    return slackTextResponsePrivate(`You cannot send ${value} Sinapsi Coins.`)
   }
 
   if (validationResult === coinExchange.VALIDATION_STATUS.CANNOT_SEND_TO_SELF) {
-    return slackTextResponsePrivate('You cannot send Clara Coins to yourself.')
+    return slackTextResponsePrivate('You cannot send Sinapsi Coins to yourself.')
   }
 
   if (!dryRun) {
@@ -98,5 +98,5 @@ export const handle = async (sender, text, responseUrl) => {
 
   const parsedMessage = message ? ` ${message}` : ''
 
-  return slackTextResponsePublic(`Thanks, you sent ${value} Clara Coins to ${receivers.join(', ')}${parsedMessage}.${dryRun ? ' (DRY RUN)' : ''}`)
+  return slackTextResponsePublic(`Thanks, you sent ${value} Sinapsi Coins to ${receivers.join(', ')}${parsedMessage}.${dryRun ? ' (DRY RUN)' : ''}`)
 }

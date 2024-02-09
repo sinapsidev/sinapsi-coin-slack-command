@@ -1,8 +1,8 @@
-# Clara Coin Slack Command
+# Sinapsi Coin Slack Command
 
 [![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
-This repository holds the AWS lamdba code used to serve the Clara Coin slack commands.
+This repository holds the AWS lamdba code used to serve the Sinapsi Coin slack commands.
 
 ## Quick start
 

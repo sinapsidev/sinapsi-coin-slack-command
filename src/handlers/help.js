@@ -31,9 +31,9 @@ export const handle = async (_sender, _text) => {
         type: 'section',
         text: {
           type: 'mrkdwn',
-          text: `*Clara Coin Help*
+          text: `*Sinapsi Coin Help*
           
-To learn about the principles and rules of Clara Coin, read Claranet Italy's playbook post:
+To learn about the principles and rules of Sinapsi Coin, read Sinapsinet Italy's playbook post:
 (https://www.flowing.it/blog/come-si-lavora-in-flowing-feedback-mentoring-e-flowing-coin/)
           `
         }
@@ -45,7 +45,7 @@ To learn about the principles and rules of Clara Coin, read Claranet Italy's pla
         type: 'section',
         text: {
           type: 'mrkdwn',
-          text: '*What you need to know about Clara Coin*:\n\n*To send coins to sailors, use the command:*\n`/coin send [value] to [person] [optiona motive]`.\n\nThe command can be used on any channel, the bot will reply in the channel where the command was launched. \n\nExample: `/coin send 10 to @gioboa for inventing Boa Coins`'
+          text: '*What you need to know about Sinapsi Coin*:\n\n*To send coins to sailors, use the command:*\n`/coin send [value] to [person] [optiona motive]`.\n\nThe command can be used on any channel, the bot will reply in the channel where the command was launched. \n\nExample: `/coin send 10 to @gioboa for inventing Boa Coins`'
         }
       },
       {
@@ -65,7 +65,7 @@ To learn about the principles and rules of Clara Coin, read Claranet Italy's pla
         type: 'section',
         text: {
           type: 'mrkdwn',
-          text: '*To view a list of all received Clara Coins:*:\n`/coin history`.\n\n The response will be a private message not visible to any other user, where the received coins will be listed.'
+          text: '*To view a list of all received Sinapsi Coins:*:\n`/coin history`.\n\n The response will be a private message not visible to any other user, where the received coins will be listed.'
         }
       }
     ]
